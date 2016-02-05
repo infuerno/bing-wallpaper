@@ -8,7 +8,7 @@
 	<array>
 		<string>/usr/bin/open</string>
 		<string>-W</string>
-		<string>/Applications/Bing Wallpaper.app</string>
+		<string>$HOME/Applications/Bing Wallpaper.app</string>
 	</array>
 	<key>LowPriorityIO</key>
 	<true/>
@@ -17,7 +17,7 @@
 	<key>StartCalendarInterval</key>
 	<dict>
 		<key>Hour</key>
-		<integer>12</integer>
+		<integer>09</integer>
 		<key>Minute</key>
 		<integer>30</integer>
 	</dict>

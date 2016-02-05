@@ -1,9 +1,10 @@
 Bing Wallpaper for Mac
 ======================
 
-Information
------------
-Automator app which initially runs a script to downloads the latest picture of the day from Bing.com, saves it to a directory and fires a notification using terminal-notifier with a link to the homepage for that picture. Finally sets the desktop wallpaper to the new picture.
+Overview
+--------
+
+Automator app which initially runs a script to download the latest picture of the day from Bing.com, saves it to a directory and fires a notification using [terminal-notifier](https://github.com/julienXX/terminal-notifier) with a link to the homepage for that picture. Finally sets the desktop wallpaper to the newly downloaded picture.
 
 Setup
 -----
@@ -11,16 +12,19 @@ Setup
 ```
 $ cd ~/Projects
 $ git clone https://github.com/infuerno/bing-wallpaper
-$ cp bing-wallpaper/Tools/Bing\ Wallpaper.app/ /Applications
-$ cp bing-wallpaper/Tools/com.ideasftw.bing-wallpaper.plist $HOME/Library/LaunchAgents
+$ ln -s $HOME/Projects/bing-wallpaper/Tools/Bing\ Wallpaper.app $HOME/Applications
+$ ln -s $HOME/Projects/bing-wallpaper/Tools/com.ideasftw.bing-wallpaper.plist $HOME/Library/LaunchAgents
 $ launchctl load $HOME/Library/LaunchAgents/com.ideasftw.bing-wallpaper.plist
 
 ```
 
-* If desired, update the default **PICTURE_DIR** in **bing-wallpaper.sh** to the
-wallpaper directory. 
-* Open Mac's `System Preferences` -> `Desktop & Screensaver`, add the wallpaper
-directory, and configure to taste.
+Default Locations
+-----------------
+
+* Open the Bing Wallpaper.app using Automator and update the **bing-wallpaper.sh** location as required. Default is $HOME/Projects/bing-wallpaper/bing-wallpaper.sh
+* Update the default **PICTURE_DIR** and **NOTIFY_ICON** in **bing-wallpaper.sh** as required. Default is $HOME/Dropbox/Pictures/Bing
+* Open Mac's `System Preferences` -> `Desktop & Screensaver` and configure to use the **PICTURE_DIR** location as set
+* Update the **Bing Wallpaper.app** location in **Tools/com.ideasftw.bing-wallpaper.plist** as required. Default is $HOME/Applications/Bing Wallpaper.app
 
 Acknowledgements
 ----------------

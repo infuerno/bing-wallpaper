@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/bin/bash $HOME/Dropbox/Projects/Bing/bing-wallpaper.sh</string>
+					<string>/bin/bash $HOME/Projects/bing-wallpaper/bing-wallpaper.sh</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -541,7 +541,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:677.000000</string>
+				<string>309.000000:497.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Filter Finder Items 2.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -623,28 +623,28 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>169A996C-B682-4BDD-A61E-602E0B6DEB2C</key>
-		<dict>
-			<key>from</key>
-			<string>8136D2E1-B703-43B4-89BE-01DE58893739 - 8136D2E1-B703-43B4-89BE-01DE58893739</string>
-			<key>to</key>
-			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
-		</dict>
-		<key>2C63A0BE-6106-4A8C-913F-CC089EEB0F48</key>
+		<key>31DDB248-70B1-46FC-AC5C-D21ADE8D0763</key>
 		<dict>
 			<key>from</key>
 			<string>397EA31F-B5F6-40CA-B6DA-C54F2020406B - 397EA31F-B5F6-40CA-B6DA-C54F2020406B</string>
 			<key>to</key>
 			<string>048DDD9F-D086-41EF-B845-1639F9A549A5 - 048DDD9F-D086-41EF-B845-1639F9A549A5</string>
 		</dict>
-		<key>D20ABC6F-95C4-4CAA-9C74-1CCD78B6260A</key>
+		<key>352FF8B1-2BCE-4798-811F-7337E1BFAB10</key>
 		<dict>
 			<key>from</key>
 			<string>048DDD9F-D086-41EF-B845-1639F9A549A5 - 048DDD9F-D086-41EF-B845-1639F9A549A5</string>
 			<key>to</key>
 			<string>8136D2E1-B703-43B4-89BE-01DE58893739 - 8136D2E1-B703-43B4-89BE-01DE58893739</string>
 		</dict>
-		<key>DD8969F7-F434-467C-BB5F-EDEF6159938B</key>
+		<key>7DB7039B-B0D1-4859-9E4A-21A60C6F7B42</key>
+		<dict>
+			<key>from</key>
+			<string>8136D2E1-B703-43B4-89BE-01DE58893739 - 8136D2E1-B703-43B4-89BE-01DE58893739</string>
+			<key>to</key>
+			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
+		</dict>
+		<key>86F4A841-3B10-4BCE-AD74-0E6FF029C3F4</key>
 		<dict>
 			<key>from</key>
 			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
