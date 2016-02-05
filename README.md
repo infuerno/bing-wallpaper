@@ -31,11 +31,6 @@ Acknowledgements
 
 This version forked from [thejandroman/bing-wallpaper](https://github.com/thejandroman/bing-wallpaper).
 
-Originally forked from [ktmud/bing-wallpaper](https://github.com/ktmud/bing-wallpaper).
 
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/infuerno/bing-wallpaper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/infuerno/bing-wallpaper/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
