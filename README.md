@@ -1,4 +1,4 @@
-Bing Wallpaper for Mac
+	Bing Wallpaper for Mac
 ======================
 
 Overview
@@ -13,6 +13,7 @@ Setup
 $ cd ~/Projects
 $ git clone https://github.com/infuerno/bing-wallpaper
 $ ln -s $HOME/Projects/bing-wallpaper/Tools/Bing\ Wallpaper.app $HOME/Applications
+$ mkdir $HOME/Library/LaunchAgents
 $ ln -s $HOME/Projects/bing-wallpaper/Tools/com.ideasftw.bing-wallpaper.plist $HOME/Library/LaunchAgents
 $ launchctl load $HOME/Library/LaunchAgents/com.ideasftw.bing-wallpaper.plist
 
@@ -21,10 +22,10 @@ $ launchctl load $HOME/Library/LaunchAgents/com.ideasftw.bing-wallpaper.plist
 Default Locations
 -----------------
 
-* Open the Bing Wallpaper.app using Automator and update the **bing-wallpaper.sh** location as required. Default is $HOME/Projects/bing-wallpaper/bing-wallpaper.sh
-* Update the default **PICTURE_DIR** and **NOTIFY_ICON** in **bing-wallpaper.sh** as required. Default is $HOME/Dropbox/Pictures/Bing
-* Open Mac's `System Preferences` -> `Desktop & Screensaver` and configure to use the **PICTURE_DIR** location as set
-* Update the **Bing Wallpaper.app** location in **Tools/com.ideasftw.bing-wallpaper.plist** as required. Default is $HOME/Applications/Bing Wallpaper.app
+* Open the Bing Wallpaper.app using Automator and update the **bing-wallpaper.sh** location if required. Default is $HOME/Projects/bing-wallpaper/bing-wallpaper.sh
+* Update the default **PICTURE_DIR** and **NOTIFY_ICON** in **bing-wallpaper.sh** if required. Default is $HOME/Dropbox/Pictures/Bing
+* Update the **Bing Wallpaper.app** location in **Tools/com.ideasftw.bing-wallpaper.plist** if required. Default is $HOME/Applications/Bing Wallpaper.app
+* [Optional] Open Mac's `System Preferences` -> `Desktop & Screensaver` and configure to use the **PICTURE_DIR** location
 
 Acknowledgements
 ----------------
