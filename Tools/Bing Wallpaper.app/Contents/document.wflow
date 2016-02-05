@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>346</string>
+	<string>419</string>
 	<key>AMApplicationVersion</key>
-	<string>2.3</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/bin/bash $HOME/Pictures/bing-wallpaper.sh</string>
+					<string>/bin/bash $HOME/Dropbox/Projects/Bing/bing-wallpaper.sh</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -172,7 +172,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.500000:830.000000</string>
+				<string>309.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -221,7 +221,7 @@
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>~/Pictures/bing-wallpapers</string>
+						<string>~/Dropbox/Pictures/Wallpaper/Bing</string>
 					</array>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -272,14 +272,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>649.500000:647.000000</string>
+				<string>309.000000:295.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -372,14 +372,14 @@
 					</dict>
 				</dict>
 				<key>isViewVisible</key>
-				<true/>
+				<false/>
 				<key>location</key>
-				<string>649.500000:409.000000</string>
+				<string>309.000000:337.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Get Folder Contents.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Get Folder Contents.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -433,10 +433,10 @@
 					<string>com.apple.cocoa.path</string>
 					<key>predicate</key>
 					<data>
-					YnBsaXN0MDDUAQIDBAUGeHlYJHZlcnNpb25Y
+					YnBsaXN0MDDUAQIDBAUGbm9YJHZlcnNpb25Y
 					JG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGG
-					oK8QGgcIDxQcJicpMTU6O0BESk9WDFdbYGZn
-					bHFzVSRudWxs0wkKCwwNDl8QF05TQ29tcG91
+					oK8QGgcIDxQcJicpMDQ5Oj1BRUpRDFJWWV9g
+					ZWlrVSRudWxs0wkKCwwNDl8QF05TQ29tcG91
 					bmRQcmVkaWNhdGVUeXBlXxAPTlNTdWJwcmVk
 					aWNhdGVzViRjbGFzcxABgAKAGdIQCxETWk5T
 					Lm9iamVjdHOhEoADgBjUCxUWFxgZGhtfEBFO
@@ -447,47 +447,39 @@
 					cHJlc3Npb25UeXBlW05TQXJndW1lbnRzgAaA
 					BRADgAiADVx2YWx1ZUZvcktleTrSHwsMKIAH
 					0iorLC1aJGNsYXNzbmFtZVgkY2xhc3Nlc18Q
-					EE5TU2VsZkV4cHJlc3Npb26jLi8wXxAQTlNT
-					ZWxmRXhwcmVzc2lvblxOU0V4cHJlc3Npb25Y
-					TlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZ
-					TlNLZXlQYXRogAsQCoAKXG1vZGlmaWVkRGF0
-					ZdIqKzw9XxAcTlNLZXlQYXRoU3BlY2lmaWVy
-					RXhwcmVzc2lvbqM+PzBfEBxOU0tleVBhdGhT
-					cGVjaWZpZXJFeHByZXNzaW9uXE5TRXhwcmVz
-					c2lvbtIqK0FCXk5TTXV0YWJsZUFycmF5o0FD
-					MFdOU0FycmF50iorRUZfEBNOU0tleVBhdGhF
-					eHByZXNzaW9upEdISTBfEBNOU0tleVBhdGhF
-					eHByZXNzaW9uXxAUTlNGdW5jdGlvbkV4cHJl
-					c3Npb25cTlNFeHByZXNzaW9u00sfC0xNTl8Q
-					D05TQ29uc3RhbnRWYWx1ZYAPEACAE9NQEAtR
-					U1VXTlMua2V5c6FSgBChVIARgBJdcHJlZGlj
-					YXRlVHlwZdIqK1hZXxATTlNNdXRhYmxlRGlj
-					dGlvbmFyeaNYWjBcTlNEaWN0aW9uYXJ50ior
-					XF1fEBlOU0NvbnN0YW50VmFsdWVFeHByZXNz
-					aW9uo15fMF8QGU5TQ29uc3RhbnRWYWx1ZUV4
-					cHJlc3Npb25cTlNFeHByZXNzaW9u1B5hC2Jj
-					TWRlWk5TTW9kaWZpZXJeTlNPcGVyYXRvclR5
-					cGWAFYAWEAtYaXNUb2RheTrSKitoaV8QGU5T
-					Q3VzdG9tUHJlZGljYXRlT3BlcmF0b3Kjamsw
-					XxAZTlNDdXN0b21QcmVkaWNhdGVPcGVyYXRv
-					cl8QE05TUHJlZGljYXRlT3BlcmF0b3LSKitt
-					bl8QFU5TQ29tcGFyaXNvblByZWRpY2F0ZaNv
-					cDBfEBVOU0NvbXBhcmlzb25QcmVkaWNhdGVb
-					TlNQcmVkaWNhdGXSKitDcqJDMNIqK3R1XxAT
-					TlNDb21wb3VuZFByZWRpY2F0ZaN2dzBfEBNO
-					U0NvbXBvdW5kUHJlZGljYXRlW05TUHJlZGlj
-					YXRlXxAPTlNLZXllZEFyY2hpdmVy0Xp7VHJv
-					b3SAAQAIABEAGgAjAC0AMgA3AFQAWgBhAHsA
-					jQCUAJYAmACaAJ8AqgCsAK4AsAC5AM0A4AD2
-					APgA+gD8AP4BCQETASIBNQFBAUMBRQFHAUkB
-					SwFYAV0BXwFkAW8BeAGLAY8BogGvAbgBvQG/
-					AcEBwwHKAdQB1gHYAdoB5wHsAgsCDwIuAjsC
-					QAJPAlMCWwJgAnYCewKRAqgCtQK8As4C0ALS
-					AtQC2wLjAuUC5wLpAusC7QL7AwADFgMaAycD
-					LANIA0wDaAN1A34DiQOYA5oDnAOeA6cDrAPI
-					A8wD6AP+BAMEGwQfBDcEQwRIBEsEUARmBGoE
-					gASMBJ4EoQSmAAAAAAAAAgEAAAAAAAAAfAAA
-					AAAAAAAAAAAAAAAABKg=
+					EE5TU2VsZkV4cHJlc3Npb26jLC4vXE5TRXhw
+					cmVzc2lvblhOU09iamVjdNIQCzEzoTKACYAM
+					0wsfNTY3OFlOU0tleVBhdGiACxAKgApbY3Jl
+					YXRlZERhdGXSKis7PF8QHE5TS2V5UGF0aFNw
+					ZWNpZmllckV4cHJlc3Npb26jOy4v0iorPj9e
+					TlNNdXRhYmxlQXJyYXmjPkAvV05TQXJyYXnS
+					KitCQ18QE05TS2V5UGF0aEV4cHJlc3Npb26k
+					QkQuL18QFE5TRnVuY3Rpb25FeHByZXNzaW9u
+					00YfC0dISV8QD05TQ29uc3RhbnRWYWx1ZYAP
+					EACAE9NLEAtMTlBXTlMua2V5c6FNgBChT4AR
+					gBJdcHJlZGljYXRlVHlwZdIqK1NUXxATTlNN
+					dXRhYmxlRGljdGlvbmFyeaNTVS9cTlNEaWN0
+					aW9uYXJ50iorV1hfEBlOU0NvbnN0YW50VmFs
+					dWVFeHByZXNzaW9uo1cuL9QeWgtbXEhdXlpO
+					U01vZGlmaWVyXk5TT3BlcmF0b3JUeXBlgBWA
+					FhALWGlzVG9kYXk60iorYWJfEBlOU0N1c3Rv
+					bVByZWRpY2F0ZU9wZXJhdG9yo2NkL18QGU5T
+					Q3VzdG9tUHJlZGljYXRlT3BlcmF0b3JfEBNO
+					U1ByZWRpY2F0ZU9wZXJhdG9y0iorZmdfEBVO
+					U0NvbXBhcmlzb25QcmVkaWNhdGWjZmgvW05T
+					UHJlZGljYXRl0iorQGqiQC/SKitsbV8QE05T
+					Q29tcG91bmRQcmVkaWNhdGWjbGgvXxAPTlNL
+					ZXllZEFyY2hpdmVy0XBxVHJvb3SAAQAIABEA
+					GgAjAC0AMgA3AFQAWgBhAHsAjQCUAJYAmACa
+					AJ8AqgCsAK4AsAC5AM0A4AD2APgA+gD8AP4B
+					CQETASIBNQFBAUMBRQFHAUkBSwFYAV0BXwFk
+					AW8BeAGLAY8BnAGlAaoBrAGuAbABtwHBAcMB
+					xQHHAdMB2AH3AfsCAAIPAhMCGwIgAjYCOwJS
+					AlkCawJtAm8CcQJ4AoACggKEAoYCiAKKApgC
+					nQKzArcCxALJAuUC6QLyAv0DDAMOAxADEgMb
+					AyADPANAA1wDcgN3A48DkwOfA6QDpwOsA8ID
+					xgPYA9sD4AAAAAAAAAIBAAAAAAAAAHIAAAAA
+					AAAAAAAAAAAAAAPi
 					</data>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -549,9 +541,9 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>649.500000:309.000000</string>
+				<string>309.000000:677.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Filter Finder Items 2.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Filter Finder Items 2.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -631,33 +623,33 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>08C78D6C-031B-4FAB-9358-CC2FDAB24AC1</key>
-		<dict>
-			<key>from</key>
-			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
-			<key>to</key>
-			<string>4A2E4299-6568-4DA1-833B-39995EDCEEA4 - 4A2E4299-6568-4DA1-833B-39995EDCEEA4</string>
-		</dict>
-		<key>52BFCA2C-5D88-4E45-980A-5B3DD8E48551</key>
+		<key>169A996C-B682-4BDD-A61E-602E0B6DEB2C</key>
 		<dict>
 			<key>from</key>
 			<string>8136D2E1-B703-43B4-89BE-01DE58893739 - 8136D2E1-B703-43B4-89BE-01DE58893739</string>
 			<key>to</key>
 			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
 		</dict>
-		<key>A35CD18E-F217-4585-B101-CE1E14ADCC63</key>
+		<key>2C63A0BE-6106-4A8C-913F-CC089EEB0F48</key>
 		<dict>
 			<key>from</key>
 			<string>397EA31F-B5F6-40CA-B6DA-C54F2020406B - 397EA31F-B5F6-40CA-B6DA-C54F2020406B</string>
 			<key>to</key>
 			<string>048DDD9F-D086-41EF-B845-1639F9A549A5 - 048DDD9F-D086-41EF-B845-1639F9A549A5</string>
 		</dict>
-		<key>C90D5437-ED42-4905-9CAD-8F39C20194FA</key>
+		<key>D20ABC6F-95C4-4CAA-9C74-1CCD78B6260A</key>
 		<dict>
 			<key>from</key>
 			<string>048DDD9F-D086-41EF-B845-1639F9A549A5 - 048DDD9F-D086-41EF-B845-1639F9A549A5</string>
 			<key>to</key>
 			<string>8136D2E1-B703-43B4-89BE-01DE58893739 - 8136D2E1-B703-43B4-89BE-01DE58893739</string>
+		</dict>
+		<key>DD8969F7-F434-467C-BB5F-EDEF6159938B</key>
+		<dict>
+			<key>from</key>
+			<string>627346E4-CE8F-4DA9-992D-161E154DF950 - 627346E4-CE8F-4DA9-992D-161E154DF950</string>
+			<key>to</key>
+			<string>4A2E4299-6568-4DA1-833B-39995EDCEEA4 - 4A2E4299-6568-4DA1-833B-39995EDCEEA4</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

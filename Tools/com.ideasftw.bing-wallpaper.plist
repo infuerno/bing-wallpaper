@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.ideasftw.bing-wallpaper</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/open</string>
+		<string>-W</string>
+		<string>/Applications/Bing Wallpaper.app</string>
+	</array>
+	<key>LowPriorityIO</key>
+	<true/>
+	<key>Nice</key>
+	<integer>1</integer>
+	<key>StartCalendarInterval</key>
 	<dict>
-		<key>Label</key>
-		<string>com.ideasftw.bing-wallpaper</string>
-		<key>ProgramArguments</key>
-		<array>
-			<string>/bin/bash</string>
-			<string>/Users/username/Pictures/bing-wallpaper.sh</string>
-		</array>
-		<key>LowPriorityIO</key>
-		<true/>
-		<key>Nice</key>
-		<integer>1</integer>
-		<key>StartCalendarInterval</key>
-		<dict>
-			<key>Hour</key>
-			<integer>10</integer>
-			<key>Minute</key>
-			<integer>0</integer>
-		</dict>
+		<key>Hour</key>
+		<integer>12</integer>
+		<key>Minute</key>
+		<integer>30</integer>
 	</dict>
+</dict>
 </plist>
