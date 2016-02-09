@@ -1,4 +1,4 @@
-	Bing Wallpaper for Mac
+Bing Wallpaper for Mac
 ======================
 
 Overview
@@ -12,9 +12,8 @@ Setup
 ```
 $ cd ~/Projects
 $ git clone https://github.com/infuerno/bing-wallpaper
+$ bing-wallpaper/setup.sh
 ```
-
-Run **bing-wallpaper/setup.sh**
 
 Default Locations
 -----------------

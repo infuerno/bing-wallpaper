@@ -20,6 +20,7 @@ for p in ${urls[@]}; do
     fi
 done
 
+# the automator workflow which sets the desktop picture doesn't work without this pause
 sleep 1s
 
 message=$(echo $data | grep -Eo " alt=\"[^\"]*\"" | \
