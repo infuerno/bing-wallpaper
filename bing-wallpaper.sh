@@ -20,6 +20,8 @@ for p in ${urls[@]}; do
     fi
 done
 
+sleep 1s
+
 message=$(echo $data | grep -Eo " alt=\"[^\"]*\"" | \
      sed -e "s/ alt=\"\([^\"]*\)\".*/\1/")
 
