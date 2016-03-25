@@ -18,18 +18,20 @@ for p in ${urls[@]}; do
     else
         logger -s "Skipping: $filename ..."
     fi
+    logger -s "Setting desktop wallpaper to $PICTURE_DIR/$filename"
+    osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$PICTURE_DIR/$filename\""
 done
 
-# the automator workflow which sets the desktop picture doesn't work without this pause
-sleep 1s
-
+# extract notification message
 message=$(echo $data | grep -Eo " alt=\"[^\"]*\"" | \
      sed -e "s/ alt=\"\([^\"]*\)\".*/\1/")
 
+# extract url
 url=$(echo $data | grep -Eo "\"/search.q=[^\"]*\"" | \
     sed -e "s/\"\([^\"]*\)\"/http:\/\/www.bing.com\1/" | \
     sed -e "s/&amp;/\&/g")
 
+# unencode url
 url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
 
 logger -s "Creating notification: $message at $url"
