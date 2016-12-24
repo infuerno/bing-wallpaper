@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-logger -s "Checking for new Bing Wallpaper..."
 PICTURE_DIR="$HOME/Dropbox/Pictures/Wallpaper/Bing"
-NOTIFY_ICON="$HOME/Dropbox/Pictures/Icons/bing-icon.png"
+ICON_DIR="$HOME/Projects/bing-wallpaper/Icons"
+
+logger -s "Checking for new Bing Wallpaper..."
 
 data=$(curl -sL http://www.bing.com/?cc=gb)
 
@@ -27,9 +28,8 @@ done
 logger -s "Extracting notification info..."
 
 # extract notification message
-message=$(echo $data | grep -Eo -m 1 " alt=\"[^\"]*\"" | \
-    head -1 | \
-    sed -e "s/ alt=\"\([^\"]*\)\".*/\1/")
+message=$(echo $data | grep -Eo "mcImgData ={\"copyright\":\"[^\"]*\"" | \
+    sed -e "s/mcImgData ={\"copyright\":\"\([^\"]*\)\".*/\1/")
 
 # extract url
 url=$(echo $data | grep -Eo -m 1 "\"/search.q=[^\"]*\"" | \
@@ -40,10 +40,7 @@ url=$(echo $data | grep -Eo -m 1 "\"/search.q=[^\"]*\"" | \
 # unencode url
 url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
 
-# sometimes the url comes twice, so just get the first one
-# url=$(echo $url | sed -n 's/\([^ ]*\).*/\1/p')
-
 logger -s "Creating notification: $message at $url"
-/usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$message" -open "$url" -appIcon "$NOTIFY_ICON"
+/usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$message" -open "$url" -appIcon "$ICON_DIR/bing-icon.png"
 
 

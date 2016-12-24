@@ -16,5 +16,7 @@
 		<!-- Run every 3 hours (60*60*3) -->
 		<key>StartInterval</key>
     	<integer>10800</integer>
+		<key>RunAtLoad</key>
+	    <true/>
     </dict>
 </plist>
