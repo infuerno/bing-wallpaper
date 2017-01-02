@@ -9,7 +9,7 @@ Bash script which downloads the latest picture of the day from Bing.com, saves i
 Setup
 -----
 
-Clone the repo and run setup.sh
+Clone the repo, update default locations and run setup.sh
 
 ```
 $ cd ~/Projects
