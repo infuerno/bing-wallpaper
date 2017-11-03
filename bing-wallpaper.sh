@@ -38,7 +38,8 @@ url=$(echo $data | grep -Eo -m 1 "\"/search.q=[^\"]*\"" | \
     sed -e "s/&amp;/\&/g")
 
 # unencode url
-url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
+#logger -s "Encoding url: $url"
+#url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
 
 logger -s "Creating notification: $message at $url"
 /usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$message" -open "$url" -appIcon "$ICON_DIR/bing-icon.png"
