@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 PICTURE_DIR="$HOME/Dropbox/Pictures/Wallpaper/Bing"
-ICON_DIR="$HOME/Projects/bing-wallpaper/Icons"
+ICON_DIR="$HOME/Projects/GitHub/bing-wallpaper/Icons"
 
 logger -s "Checking for new Bing Wallpaper..."
 
