@@ -8,11 +8,11 @@ ICON_DIR="$HOME/Projects/GitHub/bing-wallpaper/Icons"
 
 logger -s "Checking for new Bing wallpaper ..."
 
-data=$(curl -sL http://www.bing.com/?cc=gb)
+data=$(curl -sL https://www.bing.com/?cc=gb)
 
 urls=( $( echo $data | \
     grep -Eo "url: ?\".*?\"" | \
-    sed -e "s/url: \"\([^\"]*\)\".*/http:\/\/bing.com\1/" | \
+    sed -e "s/url: \"\([^\"]*\)\".*/https:\/\/bing.com\1/" | \
     sed -e "s/\\\//g") )
 
 logger -s "Url of today's Bing wallpaper: $urls"
