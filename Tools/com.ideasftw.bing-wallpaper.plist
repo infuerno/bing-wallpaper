@@ -7,7 +7,7 @@
 		<key>ProgramArguments</key>
 		<array>
 			<string>/bin/bash</string>
-			<string>/Users/claire/Projects/bing-wallpaper/bing-wallpaper.sh</string>
+			<string>/Users/claire/Projects/GitHub/bing-wallpaper/bing-wallpaper.sh</string>
 		</array>
 		<key>LowPriorityIO</key>
 		<true/>
@@ -15,7 +15,7 @@
 		<integer>1</integer>
 		<!-- Run every 3 hours (60*60*3) -->
 		<key>StartInterval</key>
-    	<integer>10800</integer>
+    	                <integer>10800</integer>
 		<key>RunAtLoad</key>
 	    <true/>
     </dict>
