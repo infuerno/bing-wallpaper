@@ -22,29 +22,34 @@ for p in ${urls[@]}; do
     if [ ! -f $PICTURE_DIR/$filename ]; then
         logger -s "Downloading to $PICTURE_DIR/$filename ..."
         curl -Lo "$PICTURE_DIR/$filename" $p
+        # Remove previous picture from Today folder
+        rm -f "$PICTURE_DIR"/Today/*
+        # Copy newly downloaded file to Today folder
+        cp "$PICTURE_DIR/$filename" "$PICTURE_DIR/Today/$filename"
+        logger -s "Setting desktop wallpaper to $PICTURE_DIR/$filename"
+        osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$PICTURE_DIR/$filename\""
+
+        logger -s "Extracting notification info ..."
+
+        # extract notification message
+        message=$(echo $data | grep -Eo "mcImgData ={\"copyright\":\"[^\"]*\"" | \
+            sed -e "s/mcImgData ={\"copyright\":\"\([^\"]*\)\".*/\1/")
+
+        # extract url
+        url=$(echo $data | grep -Eo -m 1 "href=\"/search.q=[^\"]*\"" | \
+        	head -1 | \
+            sed -e "s/href=\"\([^\"]*\)\"/https:\/\/www.bing.com\1/" | \
+            sed -e "s/&amp;/\&/g")
+        logger -s "$url2"
+
+        # unencode url
+        #logger -s "Encoding url: $url"
+        #url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
+
+        logger -s "Creating notification: $message at $url"
+        /usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$message" -open "$url" -appIcon "$ICON_DIR/bing-icon.png"
     else
         logger -s "Already downloaded to $PICTURE_DIR/$filename"
+        # TODO also check desktop is using this and set if not
     fi
-    logger -s "Setting desktop wallpaper to $PICTURE_DIR/$filename"
-    osascript -e "tell application \"Finder\" to set desktop picture to POSIX file \"$PICTURE_DIR/$filename\""
 done
-
-logger -s "Extracting notification info ..."
-
-# extract notification message
-message=$(echo $data | grep -Eo "mcImgData ={\"copyright\":\"[^\"]*\"" | \
-    sed -e "s/mcImgData ={\"copyright\":\"\([^\"]*\)\".*/\1/")
-
-# extract url
-url=$(echo $data | grep -Eo -m 1 "href=\"/search.q=[^\"]*\"" | \
-	head -1 | \
-    sed -e "s/href=\"\([^\"]*\)\"/https:\/\/www.bing.com\1/" | \
-    sed -e "s/&amp;/\&/g")
-logger -s "$url2"
-
-# unencode url
-#logger -s "Encoding url: $url"
-#url=$(python -c 'import sys, urllib; print urllib.unquote(sys.argv[1])' "$url")
-
-logger -s "Creating notification: $message at $url"
-/usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$message" -open "$url" -appIcon "$ICON_DIR/bing-icon.png"
