@@ -2,5 +2,5 @@
 
 brew install terminal-notifier
 mkdir -p $HOME/Library/LaunchAgents
-ln -s $HOME/Projects/GitHub/bing-wallpaper/Tools/com.ideasftw.bing-wallpaper.plist $HOME/Library/LaunchAgents
+ln -s $HOME/Projects/github/infuerno/bing-wallpaper/Tools/com.ideasftw.bing-wallpaper.plist $HOME/Library/LaunchAgents
 launchctl load $HOME/Library/LaunchAgents/com.ideasftw.bing-wallpaper.plist
