@@ -9,12 +9,11 @@ Bash script which downloads the latest picture of the day from Bing.com, saves i
 Setup
 -----
 
-Clone the repo, update default locations, make setup.sh executable and run
+Clone the repo, update default locations, run setup.sh
 
 ```
 $ cd ~/Projects
 $ git clone https://github.com/infuerno/bing-wallpaper
-$ chmod +x bing-wallpaper/setup.sh
 $ bing-wallpaper/setup.sh
 ```
 
