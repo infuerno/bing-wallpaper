@@ -9,11 +9,12 @@ Bash script which downloads the latest picture of the day from Bing.com, saves i
 Setup
 -----
 
-Clone the repo, update default locations and run setup.sh
+Clone the repo, update default locations, make setup.sh executable and run
 
 ```
 $ cd ~/Projects
 $ git clone https://github.com/infuerno/bing-wallpaper
+$ chmod +x bing-wallpaper/setup.sh
 $ bing-wallpaper/setup.sh
 ```
 
@@ -21,7 +22,7 @@ Default Locations
 -----------------
 
 * Update the default **PICTURE_DIR** and **NOTIFY_ICON** in **bing-wallpaper.sh** if required. Default is $HOME/Dropbox/Pictures/Bing
-* Update the **bing-wallpaper.sh** location in **Tools/com.ideasftw.bing-wallpaper.plist** if required. Default is /Users/username/Projects/bing-wallpaper/bing-wallpaper.sh
+* Update the **bing-wallpaper.sh** location in **Tools/com.ideasftw.bing-wallpaper.plist** if required. Default is /Users/[username]/Projects/github/[username]/bing-wallpaper/bing-wallpaper.sh
 * [Not necessary] Open Mac's `System Preferences` -> `Desktop & Screensaver` and configure to use the **PICTURE_DIR** location
 
 Acknowledgements
