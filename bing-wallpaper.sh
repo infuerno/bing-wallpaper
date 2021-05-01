@@ -4,8 +4,9 @@
 # log show --predicate 'process == "logger"' --last 30m
 
 PICTURE_DIR="$HOME/Dropbox/Pictures/Wallpaper/Bing"
-ICON_DIR="$HOME/Projects/GitHub/bing-wallpaper/Icons"
+ICON_DIR="$HOME/Projects/github/infuerno/bing-wallpaper/Icons"
 BASE_URL="https://www.bing.com"
+TERMINAL_NOTIFIER_DIR="/opt/homebrew/Cellar/terminal-notifier/2.0.0/bin"
 
 logger -s "Checking for new Bing wallpaper ..."
 data=$(curl -s "$BASE_URL/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-GB")
@@ -35,7 +36,7 @@ if [ ! -f $PICTURE_DIR/$filename ]; then
     logger -s "$copyrightlink"
 
     logger -s "Creating notification: $copyright at $copyrightlink"
-    /usr/local/bin/terminal-notifier -title "Bing Wallpaper" -message "$copyright" -open "$copyrightlink" -appIcon "$ICON_DIR/bing-icon.png"
+    $TERMINAL_NOTIFIER_DIR/terminal-notifier -title "Bing Wallpaper" -message "$copyright" -open "$copyrightlink" -appIcon "$ICON_DIR/bing-icon.png"
 else
     logger -s "Already downloaded to $PICTURE_DIR/$filename"
     # TODO also check desktop is using this and set if not
